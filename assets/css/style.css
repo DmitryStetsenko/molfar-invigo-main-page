@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("./../fonts/Roboto/roboto.woff2") format("woff2"), url("./../fonts/Roboto/roboto.woff") format("woff"), url("./../fonts/Roboto/roboto.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 /**
  * Swiper 11.0.7
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -989,9 +995,4 @@ button.swiper-pagination-bullet {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow: hidden;
-}
-
-.swiper {
-  width: 600px;
-  height: 300px;
 }/*# sourceMappingURL=style.css.map */

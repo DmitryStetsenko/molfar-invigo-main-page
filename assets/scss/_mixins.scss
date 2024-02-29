@@ -1,0 +1,19 @@
+@mixin flex($js: flex-start, $ai: stretch, $fd: row, $fw: nowrap) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-direction: $fd;
+  flex-wrap: $fw;
+}
+
+@mixin addFont($fn, $ff, $fw, $fs) {
+  @font-face {
+    font-family: $ff;
+    src: local($ff),
+      url($font-path + $ff + "/" + $fn + ".woff2") format("woff2"),
+      url($font-path + $ff + "/" + $fn + ".woff") format("woff"),
+      url($font-path + $ff + "/" + $fn + ".ttf") format("truetype");
+    font-weight: $fw;
+    font-style: $fs;
+  }
+}
