@@ -1,0 +1,23 @@
+.menu {
+  &__list {
+    @include flex;
+    gap: 21px;
+  }
+}
+
+.menu-item {
+  &__header {
+    @include flex(flex-start, center);
+    white-space: nowrap;
+  }
+  &__link {}
+  &__open-btn {
+    $size: 24px;
+    @include flex;
+
+    width: $size;
+    height: $size;
+    
+  }
+  &__content {}
+}

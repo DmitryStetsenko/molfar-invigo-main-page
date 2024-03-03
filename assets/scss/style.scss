@@ -2,3 +2,43 @@
 @import "mixins";
 @import "fonts";
 @import "swipper";
+
+@import "./parts/header/header";
+@import "./parts/hero/hero";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  &_fullheight {
+    height: 100%;
+  }
+}
+

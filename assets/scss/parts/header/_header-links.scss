@@ -1,0 +1,9 @@
+.header-links {
+  @include flex;
+  gap: 32px;
+  &__item {
+    &:first-child {
+      text-transform: none;
+    }
+  }
+}

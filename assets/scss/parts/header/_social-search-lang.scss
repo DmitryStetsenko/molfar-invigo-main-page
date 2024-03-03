@@ -1,0 +1,14 @@
+.social-search-lang {
+  @include flex;
+}
+.social-search {
+  @include flex;
+  gap: 32px;
+  margin-right: 48px;
+  &__item {}
+}
+
+.lang {
+  &__current {}
+  &__select {}
+}
