@@ -1,0 +1,24 @@
+.arrow-icon {
+  $size: 40px;
+  @include flex;
+
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  background: $iconBgColorWhite;
+  transition: background .3s;
+
+  & path {
+    transition: fill .3s;
+  }
+
+  &_green {
+    background: $iconBgColorGreen;
+    &:hover {
+      background: $iconBgColorWhite;
+      & path {
+        fill: $iconBgColorGreen;
+      }
+    }
+  }
+}
