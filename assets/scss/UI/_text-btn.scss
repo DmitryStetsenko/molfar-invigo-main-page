@@ -4,6 +4,7 @@
   text-transform: uppercase;
   color: $colorGreen;
   background: $colorWhite;
+  border: 1px solid transparent;
   border-radius: 50px;
   padding: 8px;
   padding-left: 40px;
@@ -13,13 +14,39 @@
   transition: background .3s, color .3s;
 
   &_hero {
+    $bgColor: $colorGreen;
+    $frColor: $colorWhite;
+
     &:hover {
-      background: $colorGreen;
-      color: $colorWhite;
+      background: $bgColor;
+      color: $frColor;
       & .arrow-icon {
-        background: $colorWhite;
+        background: $frColor;
         & path {
-          fill: $colorGreen;
+          fill: $bgColor;
+        }
+      }
+    }
+  }
+
+  &_green {
+    $bgColor: $colorGreen;
+    $frColor: $colorWhite;
+
+    background: $bgColor;
+    color: $frColor;
+    border-color: $bgColor;
+
+    &:hover {
+      $bgColor: $colorWhite;
+      $frColor: $colorGreen;
+
+      background: $bgColor;
+      color: $frColor;
+      & .arrow-icon {
+        background: $frColor;
+        & path {
+          fill: $bgColor;
         }
       }
     }

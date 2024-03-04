@@ -20,6 +20,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  line-height: 24px;
   color: $mainColor;
 }
 
@@ -41,13 +42,29 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
 .container {
-  max-width: 1140px;
+  max-width: $containerWidth;
   padding: 0 15px;
   margin: 0 auto;
 
   &_fullheight {
     height: 100%;
+  }
+  &_halfwidth {
+    max-width: calc(#{$containerWidth} / 2 + 12px);
+    padding-left: 0;
+    margin: 0;
+  }
+}
+
+.section-title {
+  font-size: 80px;
+  span {
+    color: $colorGreen;
   }
 }
 

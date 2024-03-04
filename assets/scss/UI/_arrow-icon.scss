@@ -5,6 +5,7 @@
   width: $size;
   height: $size;
   border-radius: 50%;
+  border: 1px solid transparent;
   background: $colorWhite;
   transition: background .3s;
 
@@ -14,11 +15,16 @@
 
   &_green {
     background: $colorGreen;
-    &:hover {
-      background: $colorWhite;
-      & path {
-        fill: $colorGreen;
-      }
+     & path {
+      fill: $colorWhite;
+    }
+  }
+
+  &_white {
+    border-color: $colorGreen;
+    background: $colorWhite;
+     & path {
+      fill: $colorGreen;
     }
   }
 

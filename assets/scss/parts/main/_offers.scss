@@ -156,5 +156,9 @@
   &_empty {
     padding: 0;
     background: none;
+    cursor: default;
+    &:hover {
+      border-color: transparent;
+    }
   }
 }
