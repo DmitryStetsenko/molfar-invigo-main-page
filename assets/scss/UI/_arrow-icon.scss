@@ -5,7 +5,7 @@
   width: $size;
   height: $size;
   border-radius: 50%;
-  background: $iconBgColorWhite;
+  background: $colorWhite;
   transition: background .3s;
 
   & path {
@@ -13,11 +13,38 @@
   }
 
   &_green {
-    background: $iconBgColorGreen;
+    background: $colorGreen;
     &:hover {
-      background: $iconBgColorWhite;
+      background: $colorWhite;
       & path {
-        fill: $iconBgColorGreen;
+        fill: $colorGreen;
+      }
+    }
+  }
+
+  &_big {
+    $size: 56px;
+    $iconSize: 21.5px;
+
+    width: $size;
+    height: $size;
+    border: 1px solid $mainColor;
+ 
+    & svg {
+      width: $iconSize;
+      height: $iconSize;
+      transform: rotate(-45deg);
+    }
+
+    & path {
+      fill: $mainColor;
+    }
+
+    &-green {
+      border-color: $colorGreen;
+      background: transparent;
+      & path {
+        fill: $colorGreen;
       }
     }
   }

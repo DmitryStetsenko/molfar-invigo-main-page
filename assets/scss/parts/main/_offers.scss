@@ -1,0 +1,160 @@
+.offers {
+  &__content {
+    @include flex(space-between);
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+
+.offer {
+  $parent: '.offer';
+  $size: 354px;
+  @include flex(space-between, stretch, column);
+
+  color: $mainColor;
+  width: $size;
+  height: $size;
+  padding: 40px;
+  background: #F4F4F4;
+  border: 1px solid transparent;
+  transition: background .3s, color .3s;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #DBDDDC;
+  }
+
+  &__section-title {
+    font-size: 48px;
+  }
+
+  &__header {
+    @include flex(space-between);
+    gap: 24px;
+  }
+  &__title {
+    font-size: 24px;
+  }
+  &__icon {
+    @include flex;
+    & path {
+      fill: $mainColor;
+      transition: fill .3s;
+    }
+  }
+  &__info {
+    @include flex(flex-end, stretch, column);
+    min-height: 35px;
+  }
+
+  &_green:hover {
+    $bgColor: $colorGreen;
+    $frColor: $colorWhite;
+
+    background: $bgColor;
+    color: $frColor;
+
+    & .arrow-icon_big-green {
+      border-color: $bgColor;
+      background: $frColor;
+      & path {
+        fill: $bgColor;
+      }
+    }
+
+    #{$parent}__icon {
+      & path {
+        fill: $frColor;
+      }
+    }
+  }
+  &_white:hover {
+    $bgColor: white;
+    $frColor: $colorGreen;
+
+    background: $bgColor;
+    color: $frColor;
+
+    & .arrow-icon_big-green {
+      border-color: $bgColor;
+      background: $frColor;
+      & path {
+        fill: $bgColor;
+      }
+    }
+
+    #{$parent}__icon {
+      & path {
+        fill: $frColor;
+      }
+    }
+  }
+  &_red:hover {
+    $bgColor: $colorRed;
+    $frColor: $colorWhite;
+
+    background: $bgColor;
+    color: $frColor;
+
+    & .arrow-icon_big-green {
+      border-color: $bgColor;
+      background: $frColor;
+      & path {
+        fill: $bgColor;
+      }
+    }
+
+    #{$parent}__icon {
+      & path {
+        fill: $frColor;
+      }
+    }
+  }
+  &_lime:hover {
+    $bgColor: $colorLime;
+    $frColor: $colorWhite;
+
+    background: $bgColor;
+    color: $frColor;
+
+    & .arrow-icon_big-green {
+      border-color: $bgColor;
+      background: $frColor;
+      & path {
+        fill: $bgColor;
+      }
+    }
+
+    #{$parent}__icon {
+      & path {
+        fill: $frColor;
+      }
+    }
+  }
+  &_brown:hover {
+    $bgColor: $colorBrown;
+    $frColor: $colorWhite;
+
+    background: $bgColor;
+    color: $frColor;
+
+    & .arrow-icon_big-green {
+      border-color: $bgColor;
+      background: $frColor;
+      & path {
+        fill: $bgColor;
+      }
+    }
+
+    #{$parent}__icon {
+      & path {
+        fill: $frColor;
+      }
+    }
+  }
+
+  &_empty {
+    padding: 0;
+    background: none;
+  }
+}
