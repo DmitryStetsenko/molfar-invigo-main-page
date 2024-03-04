@@ -1,0 +1,31 @@
+.about-us {
+  padding: 146px 0;
+  color: white;
+  background-image:
+    linear-gradient(90deg, rgba(33, 41, 37, 0.33) 0%, rgba(33, 41, 37, 0.33) 100%),
+    url(./../img/footer-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  a {
+    color: white;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-size: 80px;
+    line-height: 80px;
+  }
+  &__subtitle {
+    font-size: 16px;
+  }
+  &__content {
+    @include flex(space-between, flex-end);
+  }
+  &__contact-form {}
+  &__contacts {
+    @include flex(flex-start, flex-end, column);
+    gap: 32px;
+  }
+}

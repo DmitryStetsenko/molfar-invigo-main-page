@@ -1,11 +1,15 @@
 .social-search-lang {
   @include flex;
 }
-.social-search {
+.social {
   @include flex;
   gap: 32px;
   margin-right: 48px;
   &__item {}
+
+  &_footer {
+    margin: 0;
+  }
 }
 
 .lang {
