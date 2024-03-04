@@ -7,7 +7,9 @@
     @include flex;
     height: 600px;
     width: 100%;
-    background: url(./../img/video-block-img-min.jpg);
+    background-image:
+      linear-gradient(90deg, rgba(33, 41, 37, 0.33) 0%, rgba(33, 41, 37, 0.33) 100%),
+      url(./../img/video-block-img-min.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

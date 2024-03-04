@@ -1,0 +1,7 @@
+.awards {
+  margin: $sectionMargin 0;
+  &__list {
+    @include flex;
+    gap: 96px;
+  }
+}
