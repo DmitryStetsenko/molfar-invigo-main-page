@@ -1,0 +1,15 @@
+.live-video {
+  margin-top: $sectionMargin;
+  &__title {
+    margin-bottom: 64px;
+  }
+  &__media {
+    @include flex;
+    height: 600px;
+    width: 100%;
+    background: url(./../img/video-block-img-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}

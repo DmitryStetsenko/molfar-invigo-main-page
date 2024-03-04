@@ -1,0 +1,21 @@
+.video-btn {
+  @include flex;
+  width: 160px;
+  height: 112px;
+  background: url(./../img/icons/youtube-btn-bg.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  backdrop-filter: blur(10px);
+
+  &::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-bottom-width: 24px;
+    border-top-width: 24px;
+    border-left: 42px solid $mainColor;
+    transform: translateX(5px);
+  }
+}

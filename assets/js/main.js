@@ -9,3 +9,16 @@ const swiperHero = new Swiper('.swiper_hero', {
     },
   },
 });
+
+const swiperNews = new Swiper('.swiper_news', {
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 24,
+  navigation: {
+    nextEl: '.news .swiper-button-next',
+    prevEl: '.news .swiper-button-prev',
+  },
+  scrollbar: {
+    el: '.news .swiper-scrollbar',
+  },
+});

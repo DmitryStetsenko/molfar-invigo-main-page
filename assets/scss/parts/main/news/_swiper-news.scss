@@ -1,0 +1,45 @@
+
+.swiper {
+  &_news {
+    width: 100%;
+    height: 356px;
+    margin-bottom: 64px;
+  }
+}
+
+.swiper-manage-block {
+  @include flex(flex-end);
+  position: relative;
+  .swiper-scrollbar {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: #DBDDDC;
+    &.swiper-scrollbar-horizontal {
+      height: 2px;
+      width: 85%;
+    }
+  }
+
+  .swiper-manage-btns {
+    @include flex;
+    gap: 32px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: static;
+    margin: 0;
+  }
+
+  .swiper-button-prev {
+    &::after {
+      display: none;
+    }
+  }
+  .swiper-button-next {
+    &::after {
+      display: none;
+    }
+  }
+}

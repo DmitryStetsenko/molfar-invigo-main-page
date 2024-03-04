@@ -53,5 +53,34 @@
         fill: $colorGreen;
       }
     }
+    &-white {
+      border-color: $colorWhite;
+      background: transparent;
+      & path {
+        fill: $colorWhite;
+      }
+    }
+  }
+
+  &_swiper {
+    $size: 56px;
+    $iconSize: 16px;
+
+    width: $size;
+    height: $size;
+    border-color: $mainColor;
+
+    & svg {
+      width: $iconSize;
+      height: $iconSize;
+      
+    }
+    & path {
+      fill: $mainColor;
+    }
+
+    &-prev {
+      transform: scaleX(-1);
+    }
   }
 }
