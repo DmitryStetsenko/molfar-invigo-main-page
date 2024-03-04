@@ -1,0 +1,65 @@
+.footer {
+  padding-top: 100px;
+  padding-bottom: 32px;
+  background: $mainColor;
+  color: white;
+
+  a {
+    color: white;
+  }
+
+  &__block {
+    @include flex(flex-start, stretch);
+    gap: 89px;
+    margin-bottom: 100px;
+  }
+
+  &__logo-block {
+    margin-right: auto;
+  }
+
+  &__info {
+    margin-top: 32px;
+    margin-bottom: 73px;
+    span {
+      display: block;
+    }
+  }
+}
+
+
+.footer-menu {
+  &__list {
+    @include flex(flex-start, stretch, column);
+    gap: 24px;
+  }
+  &__item {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 21px;
+    a {
+    }
+    &_noupper {
+      text-transform: none;
+    }
+  }
+}
+
+.footer-contacts {
+  @include flex(flex-start, flex-start);
+  gap: 89px;
+  &__part {}
+  &__title {
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  &__list {
+    @include flex(flex-start, flex-start, column);
+    gap: 24px;
+  }
+  &__item {
+    a {}
+  }
+}
+
+@import "./../../UI/copyright";

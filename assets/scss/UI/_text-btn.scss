@@ -29,6 +29,31 @@
     }
   }
 
+  &_footer {
+    $bgColor: $mainColor;
+    $frColor: $colorWhite;
+
+    color: $bgColor;
+    & .arrow-icon {
+      background: $bgColor;
+      & path {
+        fill: $frColor;
+      }
+    }
+
+    &:hover {
+      background: $bgColor;
+      color: $frColor;
+      border-color: $frColor;
+      & .arrow-icon {
+        background: $frColor;
+        & path {
+          fill: $bgColor;
+        }
+      }
+    }
+  }
+
   &_green {
     $bgColor: $colorGreen;
     $frColor: $colorWhite;

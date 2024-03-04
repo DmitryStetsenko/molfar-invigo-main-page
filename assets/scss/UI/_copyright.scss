@@ -1,0 +1,15 @@
+.copyright {
+  @include flex(flex-start);
+  gap: 32px;
+
+  a {
+    color: rgba(white, .5);
+  }
+
+  &__item {
+    font-size: 14px;
+    &:first-child {
+      margin-right: auto;
+    }
+  }
+}
