@@ -20,3 +20,13 @@
     }
   }
 }
+
+@media (max-width: $bp6) {
+  .awards {
+    &__item {
+      img {
+        width: 80px;
+      }
+    }
+  }
+}

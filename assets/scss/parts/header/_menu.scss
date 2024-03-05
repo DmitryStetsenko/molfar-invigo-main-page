@@ -21,3 +21,15 @@
   }
   &__content {}
 }
+
+@media (max-width: $bp1) {
+  .menu {
+    &__list {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  .menu-item {
+    justify-content: flex-start;
+  }
+}

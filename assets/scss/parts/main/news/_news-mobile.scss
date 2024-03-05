@@ -17,11 +17,10 @@
 
 .news-slide {
   @include flex(space-between, stretch, column);
-  $sildeW: 351px;
-  $sildeH: 351px;
+  $size: 351px;
 
-  width: $sildeW;
-  height: $sildeH;
+  width: $size;
+  height: $size;
   position: relative;
   padding: 32px;
   color: white;
@@ -69,6 +68,22 @@
       height: 100%;
       object-fit: cover;
       object-position: center;
+    }
+  }
+}
+
+@media (max-width: $bp6) {
+  .news-mobile {
+    &__title {
+      font-size: $mobileSectionFZ;
+      line-height: $mobileSectionFZ;
+    }
+  }
+  .news-slide {
+    height: 251px;
+
+    &__text {
+      display: none;
     }
   }
 }

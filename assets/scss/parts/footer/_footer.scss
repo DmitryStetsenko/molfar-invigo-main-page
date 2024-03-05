@@ -85,3 +85,21 @@
     }
   }
 }
+
+@media (max-width: $bp6) {
+  $gap: 32px;
+  .footer {
+    &__block {
+      gap: $gap;
+    }
+  }
+
+  .footer-menu {
+    width: calc(50% - $gap);
+  }
+  .footer-contacts {
+    width: calc(50% - $gap);
+  }
+
+  
+}

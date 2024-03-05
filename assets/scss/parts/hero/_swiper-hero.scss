@@ -86,3 +86,15 @@
     border-bottom-color: white;
   }
 }
+
+@media (max-width: $bp6) {
+  .swiper {
+    &_hero {
+      height: 667px;
+    }
+  }
+
+  .swiper-hero-pagination {
+    display: none;
+  }
+}

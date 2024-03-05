@@ -13,3 +13,15 @@
     }
   }
 }
+
+@media (max-width: $bp6) {
+  .copyright {
+    flex-direction: column;
+    align-items: center;
+    &__item {
+      &:first-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

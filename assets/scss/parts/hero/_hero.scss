@@ -43,3 +43,39 @@
     }
   }
 }
+
+@media (max-width: $bp5) {
+  .hero-slide {
+    &__subtitle {
+      $fz: 4.5vw;
+      font-size: $fz;
+      line-height: $fz;
+    }
+  }
+}
+
+@media (max-width: $bp6) {
+  .hero-slide {
+    &__title {
+      $fz: 48px;
+
+      font-size: $fz;
+      line-height: $fz;
+    }
+    &__subtitle {
+      $fz: 24px;
+
+      font-size: $fz;
+      line-height: $fz;
+    }
+    &__content {
+      position: relative;
+    }
+
+    .text-btn {
+      position: absolute;
+      bottom: 32px;
+      align-self: center;
+    }
+  }
+}

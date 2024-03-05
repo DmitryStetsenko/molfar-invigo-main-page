@@ -45,3 +45,43 @@
     padding: 128px 0;
   }
 }
+
+@media (max-width: $bp6) {
+  .about-us {
+    padding-bottom: 48px;
+    &__title {
+      $fz: 48px;
+      font-size: $fz;
+      line-height: 57.6px;
+    }
+    &__subtitle {
+      margin-bottom: 64px;
+    }
+    &__content {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__contact-form {
+      margin-bottom: $mobileSectionMargin;
+    }
+    &__contacts {
+      align-items: center;
+      font-size: 24px;
+    }
+
+    .social {
+      &__item {
+        $size: 48px;
+        @include flex();
+        border-radius: 50%;
+        border: 1px solid white;
+        width: $size;
+        height: $size;
+
+        img {
+
+        }
+      }
+    }
+  }
+}

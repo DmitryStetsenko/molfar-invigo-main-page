@@ -1,3 +1,5 @@
+const doc = document;
+
 const mediaBp = {
   bp1: 1140,
   bp2: 980,
@@ -36,8 +38,21 @@ const swiperNews = new Swiper('.swiper_news', {
   },
 });
 
+toggleHeaderMenuInit();
+
 window.addEventListener('resize', () => {
   if (window.innerWidth < mediaBp.bp5) {
     swiperNews.destroy();
   }
 });
+
+function toggleHeaderMenuInit() {
+  const menuToggleBtn = doc.querySelector('.header__toggle-menu');
+  const header = doc.querySelector('.header');
+  const menuBlock = doc.querySelector('.header__menu-block');
+
+  menuToggleBtn.onclick = () => {
+    header.classList.toggle('header_open');
+    menuBlock.classList.toggle('header__menu-block_open');
+  }
+}

@@ -18,6 +18,12 @@
 @import "./awards";
 @import "./about-us";
 
+@media (max-width: $bp3) {
+  .main {
+    margin-top: $mobileSectionMargin;
+  }
+}
+
 @media (max-width: $bp5) {
   .news {
     display: none;

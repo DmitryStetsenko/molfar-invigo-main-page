@@ -67,3 +67,12 @@
     margin-top: $mobileSectionMargin;
   }
 }
+
+@media (max-width: $bp6) {
+  .news {
+    &__title {
+      font-size: $mobileSectionFZ;
+      line-height: $mobileSectionFZ;
+    }
+  }
+}
