@@ -1,6 +1,9 @@
 $font-path: './../fonts/';
 $mainColor: #212925;
+
 $sectionMargin: 200px;
+$mobileSectionMargin: 128px;
+
 $containerWidth: 1140px;
 
 // header
@@ -15,3 +18,10 @@ $colorWhite: white;
 $colorRed: #D02121;
 $colorLime: #80C348;
 $colorBrown: #5E1A0F;
+
+// breakpoints
+$bp1: 1140px;
+$bp2: 980px;
+$bp3: 860px;
+$bp4: 760px;
+$bp5: 590px;

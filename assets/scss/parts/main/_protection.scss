@@ -44,6 +44,7 @@ $sideGap: 35px;
 }
 
 .protection-advantages {
+  margin-top: 32px;
   &__title {
     @include flex(flex-start, flex-end);
     font-size: 32px;
@@ -74,7 +75,7 @@ $sideGap: 35px;
   margin-top: 150px;
 }
 .protection-info {
-  @include flex;
+  @include flex(flex-start, stretch);
   gap: 24px;
   &__side {
     width: 50%;
@@ -90,3 +91,34 @@ $sideGap: 35px;
   }
 }
 
+@media (max-width: $bp3) {
+  .protection {
+    margin-top: $mobileSectionMargin;
+    &__content {
+      flex-direction: column;
+      gap: 32px;
+    }
+    &__side {
+      width: 100%;
+      height: 667px;
+      &_left {
+        padding-right: 0;
+      }
+      &_right {
+        height: initial;
+      }
+    }
+  }
+}
+
+@media (max-width: $bp4) {
+  .protection-info-block {
+    margin-top: $mobileSectionMargin;
+  }
+  .protection-info {
+    flex-direction: column;
+    &__side {
+      width: 100%;
+    }
+  }
+}

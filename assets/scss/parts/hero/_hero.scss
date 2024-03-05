@@ -32,3 +32,14 @@
 }
 
 @import "./swiper-hero";
+
+@media (max-width: $bp2) {
+  .hero-slide {
+    &__title {
+      $fz: 13vw;
+
+      font-size: $fz;
+      line-height: $fz;
+    }
+  }
+}

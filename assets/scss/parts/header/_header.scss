@@ -16,7 +16,10 @@
   }
 
   &__block {
-    @include flex(flex-start, center);
+    @include flex(space-between, center);
+  }
+  &__toggle-menu {
+    display: none;
   }
   &__menu-block {
     margin-left: 119px;
@@ -37,3 +40,16 @@
 @import "./header-links";
 @import "./social-search-lang";
 @import "./menu";
+
+@media (max-width: $bp1) {
+  .header {
+    padding: 32px 0;
+
+    &__toggle-menu {
+      display: block;
+    }
+    &__menu-block {
+      display: none;
+    }
+  }
+}

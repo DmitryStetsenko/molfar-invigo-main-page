@@ -1,6 +1,6 @@
 .offers {
   &__content {
-    @include flex(space-between);
+    @include flex(flex-start);
     flex-wrap: wrap;
     gap: 24px;
   }
@@ -159,6 +159,41 @@
     cursor: default;
     &:hover {
       border-color: transparent;
+    }
+  }
+}
+
+@media (max-width: $bp1) {
+  $gap: 24px;
+  $count: 3;
+
+  .offer {
+    $parent: '.offer';
+    $size: calc((100% - $gap * ($count - 1)) / $count);
+  
+    width: $size;
+    padding: 32px;
+
+    &_empty {
+      width: 100%;
+      height: initial;
+    }
+  }
+}
+
+@media (max-width: $bp3) {
+  $gap: 24px;
+  $count: 2;
+
+  .offer {
+    $parent: '.offer';
+    $size: calc((100% - $gap * ($count - 1)) / $count);
+  
+    width: $size;
+
+    &_empty {
+      width: 100%;
+      height: initial;
     }
   }
 }

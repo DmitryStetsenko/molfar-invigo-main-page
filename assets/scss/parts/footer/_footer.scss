@@ -63,3 +63,25 @@
 }
 
 @import "./../../UI/copyright";
+
+@media (max-width: $bp1) {
+  .footer-contacts {
+    flex-direction: column;
+    gap: 89px;
+    &__part {}
+  }
+}
+
+@media (max-width: $bp3) {
+  .footer {
+    &__block {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__logo-block {
+      @include flex(flex-start, center, column);
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+}

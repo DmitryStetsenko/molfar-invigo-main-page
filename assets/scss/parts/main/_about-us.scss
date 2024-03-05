@@ -29,3 +29,19 @@
     gap: 32px;
   }
 }
+
+@media (max-width: $bp2) {
+  .about-us {
+    &__title {
+      $fz: 8vw;
+      font-size: $fz;
+      line-height: $fz;
+    }
+  }
+}
+
+@media (max-width: $bp3) {
+  .about-us {
+    padding: 128px 0;
+  }
+}

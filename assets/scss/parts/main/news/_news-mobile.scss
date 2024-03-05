@@ -1,15 +1,27 @@
-.news {
-  margin-top: $sectionMargin;
+.news-mobile {
+  margin-top: $mobileSectionMargin;
+
   &__header {
     @include flex(space-between);
     margin-bottom: 77px;
+  }
+  &__content {
+    @include flex(flex-start, center, column);
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+  &__allnews {
+    @include flex;
   }
 }
 
 .news-slide {
   @include flex(space-between, stretch, column);
-  width: 100%;
-  height: 100%;
+  $sildeW: 351px;
+  $sildeH: 351px;
+
+  width: $sildeW;
+  height: $sildeH;
   position: relative;
   padding: 32px;
   color: white;
@@ -27,7 +39,8 @@
     @include flex(flex-end);
   }
 
-  &__content {}
+  &__content {
+  }
   &__title {
     font-size: 24px;
   }
@@ -57,13 +70,5 @@
       object-fit: cover;
       object-position: center;
     }
-  }
-}
-
-@import "./swiper-news";
-
-@media (max-width: $bp3) {
-  .news {
-    margin-top: $mobileSectionMargin;
   }
 }

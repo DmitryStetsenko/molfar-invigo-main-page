@@ -55,3 +55,23 @@ img {
     color: $colorGreen;
   }
 }
+
+@media (max-width: $bp2) {
+  .section-title {
+    font-size: 8vw;
+  }
+}
+
+@media (max-width: $bp3) {
+  .container {
+    max-width: $containerWidth;
+    padding: 0 15px;
+    margin: 0 auto;
+  
+    &_halfwidth {
+      max-width: $containerWidth;
+      padding: 0 15px;
+      margin: 0 auto;
+    }
+  }
+}

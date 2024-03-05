@@ -15,3 +15,9 @@
     background-position: center;
   }
 }
+
+@media (max-width: $bp3) {
+  .live-video {
+    margin-top: $mobileSectionMargin;
+  }
+}

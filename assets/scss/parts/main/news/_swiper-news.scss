@@ -43,3 +43,33 @@
     }
   }
 }
+
+@media (max-width: $bp1) {
+  .swiper-manage-block {
+    .swiper-scrollbar {
+      &.swiper-scrollbar-horizontal {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media (max-width: $bp2) {
+  .swiper-manage-block {
+    .swiper-scrollbar {
+      &.swiper-scrollbar-horizontal {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media (max-width: $bp3) {
+  .swiper-manage-block {
+    .swiper-scrollbar {
+      &.swiper-scrollbar-horizontal {
+        width: 60%;
+      }
+    }
+  }
+}

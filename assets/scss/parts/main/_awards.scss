@@ -5,3 +5,18 @@
     gap: 96px;
   }
 }
+
+@media (max-width: $bp3) {
+  .awards {
+    margin: $mobileSectionMargin 0;
+  }
+}
+
+@media (max-width: $bp5) {
+  .awards {
+    &__list {
+      justify-content: space-between;;
+      gap: initial;
+    }
+  }
+}

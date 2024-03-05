@@ -1,0 +1,18 @@
+.toggle-menu-btn {
+  @include flex(center, center, column);
+  $size: 48px;
+  $lineSize: 16px;
+
+  gap: 2px;
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  border: 1px solid white;
+  &::before,
+  &::after {
+    content: '';
+    width: $lineSize;
+    height: 2px;
+    background: white;
+  }
+}

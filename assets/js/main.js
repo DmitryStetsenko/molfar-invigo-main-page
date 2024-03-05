@@ -1,3 +1,11 @@
+const mediaBp = {
+  bp1: 1140,
+  bp2: 980,
+  bp3: 860,
+  bp4: 760,
+  bp5: 590,
+}
+
 const swiperHero = new Swiper('.swiper_hero', {
   loop: true,
   pagination: {
@@ -12,7 +20,7 @@ const swiperHero = new Swiper('.swiper_hero', {
 
 const swiperNews = new Swiper('.swiper_news', {
   loop: true,
-  slidesPerView: 3,
+  slidesPerView: 2,
   spaceBetween: 24,
   navigation: {
     nextEl: '.news .swiper-button-next',
@@ -21,4 +29,15 @@ const swiperNews = new Swiper('.swiper_news', {
   scrollbar: {
     el: '.news .swiper-scrollbar',
   },
+  breakpoints: {
+    [mediaBp.bp3]: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth < mediaBp.bp5) {
+    swiperNews.destroy();
+  }
 });
