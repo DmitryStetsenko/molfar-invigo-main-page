@@ -260,9 +260,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -657,8 +657,16 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 520px;
+  width: 35vw;
   height: 420px;
+}
+.vacancies__main-thumbnail img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .vacancies__main-content {
   display: -webkit-box;
@@ -724,6 +732,61 @@ img {
   color: #6A706D;
 }
 
+@media (max-width: 1140px) {
+  .vacancies__side_left {
+    padding-right: 0;
+  }
+}
+@media (max-width: 760px) {
+  .vacancies__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 48px;
+    gap: 48px;
+  }
+  .vacancies__main {
+    position: relative;
+  }
+  .vacancies__main-thumbnail {
+    padding: 0 15px;
+    position: static;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 80px;
+  }
+  .vacancies__main-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
+  .vacancies__info-block {
+    height: initial;
+  }
+}
+@media (max-width: 590px) {
+  .vacancies__side_left {
+    width: 100%;
+  }
+  .vacancies__side_right {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .vacancies__resource {
+    width: 100%;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .awards {
   margin: 200px 0;
 }
