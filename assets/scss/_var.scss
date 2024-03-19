@@ -1,6 +1,7 @@
 $font-path: './../fonts/';
 $mainColor: #212925;
 
+$sectionTitleSize: 80px;
 $sectionMargin: 200px;
 $mobileSectionMargin: 128px;
 $mobileSectionFZ: 48px;
@@ -11,7 +12,14 @@ $containerWidth: 1140px;
 $headerBgColor: rgba(33, 41, 37, 0.5);
 $headerColor: white;
 $headerFontSize: 14px;
+$headerHeight: 113px;
 
+// all page exlude main
+$bodyPaddingTop: $headerHeight;
+$mainFirstBlockPT: 104px;
+$mobMainFirstBlockPT: 80px;
+$sectionTitleAllPageMb: 104px;
+$mobSectionTitleAllPageMb: 48px;
 
 // UI
 $colorGreen: #01723B;

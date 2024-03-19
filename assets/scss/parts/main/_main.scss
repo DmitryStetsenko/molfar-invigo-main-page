@@ -1,10 +1,18 @@
 .main {
   margin-top: $sectionMargin;
+  &_all-page {
+    margin-top: 0;
+    padding-top: $mainFirstBlockPT;
+  }
 }
 
 @media (max-width: $bp3) {
   .main {
     margin-top: $mobileSectionMargin;
+    &_all-page {
+      margin-top: 0;
+      padding-top: $mobMainFirstBlockPT;
+    }
   }
 }
 

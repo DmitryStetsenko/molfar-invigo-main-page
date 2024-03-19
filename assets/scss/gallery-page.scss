@@ -10,8 +10,13 @@
 
 // main
 @import "./parts/main/main";
+@import "./parts/main/gallery";
 @import "./parts/main/awards";
 @import "./parts/main/about-us";
 // ---- main
 
 @import "./parts/footer/footer";
+
+body {
+  padding-top: $bodyPaddingTop;
+}

@@ -51,8 +51,13 @@ img {
 
 .section-title {
   font-size: 80px;
+  line-height: 1;
   span {
     color: $colorGreen;
+  }
+
+  &_all-page {
+    margin-bottom: $sectionTitleAllPageMb;
   }
 }
 
@@ -72,6 +77,16 @@ img {
       max-width: $containerWidth;
       padding: 0 15px;
       margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: $bp5) {
+  .section-title {
+    font-size: 48px;
+  
+    &_all-page {
+      margin-bottom: $mobSectionTitleAllPageMb;
     }
   }
 }
