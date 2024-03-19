@@ -8,7 +8,7 @@ const mediaBp = {
   bp5: 590,
 }
 
-const swiperHero = new Swiper('.swiper_hero', {
+const swiperHeroOptions = {
   loop: true,
   pagination: {
     el: '.swiper-hero-pagination',
@@ -17,10 +17,11 @@ const swiperHero = new Swiper('.swiper_hero', {
       console.log(className);
       return `<span class="${className} swiper-hero-pagination__item"></span>`;
     },
-  },
-});
+  }
+};
+const swiperHero = initSwiper('.swiper_hero', swiperHeroOptions, mediaBp);
 
-const swiperNews = new Swiper('.swiper_news', {
+const swiperNewsOptions = {
   loop: true,
   slidesPerView: 2,
   spaceBetween: 24,
@@ -36,15 +37,30 @@ const swiperNews = new Swiper('.swiper_news', {
       slidesPerView: 3,
     },
   },
-});
+};
+const swiperNews = initSwiper('.swiper_news', swiperNewsOptions, mediaBp, true);
 
 toggleHeaderMenuInit();
 
-window.addEventListener('resize', () => {
-  if (window.innerWidth < mediaBp.bp5) {
-    swiperNews.destroy();
+// FUNCTIONS -------------------
+
+function initSwiper(selector, options, mediaBp, mobileDestroy = false) {
+  if (!document.querySelector(selector)) {
+    return;
   }
-});
+
+  const slider = new Swiper(selector, options);
+
+  if (mobileDestroy) {
+    window.addEventListener('resize', () => {
+      if (window.innerWidth < mediaBp.bp5) {
+        slider.destroy();
+      }
+    });
+  }
+
+  return slider;
+}
 
 function toggleHeaderMenuInit() {
   const menuToggleBtn = doc.querySelector('.header__toggle-menu');
