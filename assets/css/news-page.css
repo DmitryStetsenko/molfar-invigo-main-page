@@ -621,6 +621,28 @@ img {
     padding-top: 80px;
   }
 }
+.news-section__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
 .news-section-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -638,9 +660,15 @@ img {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   gap: 32px;
-  max-width: 550px;
   height: 332px;
   padding: 32px;
+  border: 1px solid transparent;
+  width: calc((100% - 24px) / 2);
+}
+.news-section-item:hover {
+  cursor: pointer;
+  border-color: #DBDDDC;
+  background: #F8F9F8;
 }
 .news-section-item__side_info {
   display: -webkit-box;
@@ -681,6 +709,46 @@ img {
      object-position: center;
 }
 
+@media (max-width: 980px) {
+  .news-section-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: initial;
+  }
+  .news-section-item__side {
+    width: 100%;
+  }
+  .news-section-item__side_info {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .news-section-item__img {
+    width: 100%;
+    height: 200px;
+  }
+  .news-section-item__img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+}
+@media (max-width: 760px) {
+  .news-section__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .news-section-item {
+    width: 100%;
+  }
+}
 .awards {
   margin: 200px 0;
 }
