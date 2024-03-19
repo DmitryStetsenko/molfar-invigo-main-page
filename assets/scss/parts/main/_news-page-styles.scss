@@ -1,0 +1,38 @@
+.news-section {
+  &__title {}
+  &__content {}
+
+}
+
+.news-section-item {
+  @include flex(flex-start, stretch);
+  gap: 32px;
+  max-width: 550px;
+  height: 332px;
+  padding: 32px;
+
+  &__side {
+    &_info {
+      @include flex(center, center, column);
+      width: 100%;
+    }
+  }
+  &__info {
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 23px;
+  }
+  &__descr {
+    color: $colorGrey;
+  }
+  &__img {
+    width: 166px;
+    height: 100%;
+    img {
+      @include objFit;
+    }
+  }
+  
+}

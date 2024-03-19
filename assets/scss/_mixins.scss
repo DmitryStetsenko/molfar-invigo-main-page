@@ -17,3 +17,10 @@
     font-style: $fs;
   }
 }
+
+@mixin objFit($of: cover, $op: center) {
+  width: 100%;
+  height: 100%;
+  object-fit: $of;
+  object-position: $op;
+}
