@@ -1,0 +1,59 @@
+.vacancies {
+  $sLeft: 35%;
+  $sRight: 65%;
+  $blockHeight: 420px;
+
+  &__header {
+    @include flex(space-between);
+    margin-bottom: 78px;
+    gap: 120px;
+  }
+  &__side {
+    &_left {
+      padding-right: 40px;
+      width: $sLeft;
+    }
+    &_right {
+      width: $sRight;
+    }
+  }
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__main {
+    position: relative;
+  }
+  &__main-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 520px;
+    height: $blockHeight;
+  }
+
+  &__main-content {
+    @include flex(space-between);
+    gap: 120px;
+  }
+
+  &__info-block {
+    @include flex(flex-end, flex-start, column);
+  
+    height: $blockHeight;
+  }
+  &__info {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 48px;
+  }
+  &__resource {
+    @include flex(flex-start);
+    gap: 24px; 
+    margin-bottom: 48px;
+  }
+  &__personal-data {
+    color: $colorGrey;
+  }
+
+}

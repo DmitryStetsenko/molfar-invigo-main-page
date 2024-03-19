@@ -1294,6 +1294,27 @@ img {
 .text-btn_green:hover .arrow-icon path {
   fill: white;
 }
+.text-btn_blue {
+  border-color: blue;
+  color: blue;
+}
+.text-btn_blue .arrow-icon {
+  background: blue;
+}
+.text-btn_blue .arrow-icon path {
+  fill: white;
+}
+.text-btn_blue:hover {
+  background: blue;
+  color: white;
+  border-color: white;
+}
+.text-btn_blue:hover .arrow-icon {
+  background: white;
+}
+.text-btn_blue:hover .arrow-icon path {
+  fill: blue;
+}
 
 .video-btn {
   display: -webkit-box;

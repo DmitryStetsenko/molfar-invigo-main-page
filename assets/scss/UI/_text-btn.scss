@@ -76,4 +76,31 @@
       }
     }
   }
+
+  &_blue {
+    $bgColor: $colorBlue;
+    $frColor: $colorWhite;
+
+    border-color: $bgColor;
+
+    color: $bgColor;
+    & .arrow-icon {
+      background: $bgColor;
+      & path {
+        fill: $frColor;
+      }
+    }
+
+    &:hover {
+      background: $bgColor;
+      color: $frColor;
+      border-color: $frColor;
+      & .arrow-icon {
+        background: $frColor;
+        & path {
+          fill: $bgColor;
+        }
+      }
+    }
+  }
 }
