@@ -12,5 +12,21 @@
 
 @import "./parts/header/header";
 @import "./parts/hero/hero";
+
+// main
 @import "./parts/main/main";
+@import "./parts/main/offers";
+@import "./parts/main/protection";
+
+@import "./parts/main/news/news";
+
+@media (max-width: $bp5) {
+  @import "./parts/main/news/news-mobile";
+}
+
+@import "./parts/main/live-video";
+@import "./parts/main/awards";
+@import "./parts/main/about-us";
+// --- main
+
 @import "./parts/footer/footer";

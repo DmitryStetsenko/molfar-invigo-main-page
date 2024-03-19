@@ -60,11 +60,25 @@
   }
 }
 
+.news-mobile {
+  display: none;
+}
+
 @import "./swiper-news";
 
 @media (max-width: $bp3) {
   .news {
     margin-top: $mobileSectionMargin;
+  }
+}
+
+@media (max-width: $bp5) {
+  .news {
+    display: none;
+  }
+
+  .news-mobile {
+    display: block;
   }
 }
 

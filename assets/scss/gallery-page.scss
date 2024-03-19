@@ -1,0 +1,17 @@
+@import "var";
+@import "mixins";
+@import "fonts";
+
+@import "commons";
+
+@import "UI/toggle-menu-btn";
+
+@import "./parts/header/header";
+
+// main
+@import "./parts/main/main";
+@import "./parts/main/awards";
+@import "./parts/main/about-us";
+// ---- main
+
+@import "./parts/footer/footer";

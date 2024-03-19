@@ -1,22 +1,6 @@
 .main {
   margin-top: $sectionMargin;
 }
-.news-mobile {
-  display: none;
-}
-
-@import "./offers";
-@import "./protection";
-
-@import "./news/news";
-
-@media (max-width: $bp5) {
-  @import "./news/news-mobile";
-}
-
-@import "./live-video";
-@import "./awards";
-@import "./about-us";
 
 @media (max-width: $bp3) {
   .main {
@@ -24,12 +8,4 @@
   }
 }
 
-@media (max-width: $bp5) {
-  .news {
-    display: none;
-  }
 
-  .news-mobile {
-    display: block;
-  }
-}
