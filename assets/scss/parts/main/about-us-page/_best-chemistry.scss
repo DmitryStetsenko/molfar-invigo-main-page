@@ -1,0 +1,48 @@
+$sectionGap: 115px;
+$sectionPartBigger: calc(54% - #{$sectionGap} / 2);
+$sectionPartSmaller: calc(46% - #{$sectionGap} / 2);
+
+.best-chemistry {
+  margin-bottom: $sectionMargin;
+
+  &__info-block {
+    @include flex(space-between, flex-start);
+    gap: $sectionGap;
+    margin-bottom: $sectionMargin;
+  }
+  &__title-block {
+    width: $sectionPartSmaller;
+  }
+  &__title {
+    margin-bottom: 48px;
+  }
+  &__subtitle {
+    color: $colorGreen;
+    font-size: 32px;
+  }
+  &__info {
+    width: $sectionPartBigger;
+  }
+  &__thumbnail {
+    width: 100%;
+    height: 500px;
+    img {
+      @include objFit;
+    }
+  }
+}
+
+.best-chemistry-info-item {
+  margin-bottom: 64px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  &__descr {}
+}

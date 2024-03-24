@@ -1,0 +1,29 @@
+@import "var";
+@import "mixins";
+@import "fonts";
+
+@import "commons";
+
+@import "UI/toggle-menu-btn";
+@import "UI/arrow-icon";
+@import "UI/text-btn";
+@import "UI/bread-crumbs";
+
+@import "./parts/header/header";
+
+// main
+@import "./parts/main/main";
+
+// about-us-page-parts
+@import "./parts/main/about-us-page/best-chemistry";
+// -------------------
+
+@import "./parts/main/awards";
+@import "./parts/main/about-us";
+// ---- main
+
+@import "./parts/footer/footer";
+
+body {
+  padding-top: $bodyPaddingTop;
+}
