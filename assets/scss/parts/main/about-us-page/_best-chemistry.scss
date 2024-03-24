@@ -1,6 +1,4 @@
-$sectionGap: 115px;
-$sectionPartBigger: calc(54% - #{$sectionGap} / 2);
-$sectionPartSmaller: calc(46% - #{$sectionGap} / 2);
+
 
 .best-chemistry {
   margin-bottom: $sectionMargin;
@@ -13,13 +11,10 @@ $sectionPartSmaller: calc(46% - #{$sectionGap} / 2);
   &__title-block {
     width: $sectionPartSmaller;
   }
-  &__title {
-    margin-bottom: 48px;
-  }
-  &__subtitle {
-    color: $colorGreen;
-    font-size: 32px;
-  }
+  
+  &__title {}
+  &__subtitle {}
+
   &__info {
     width: $sectionPartBigger;
   }

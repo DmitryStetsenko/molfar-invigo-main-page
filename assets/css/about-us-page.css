@@ -625,6 +625,15 @@ img {
     padding-top: 80px;
   }
 }
+.about-us-section-title {
+  margin-bottom: 48px;
+}
+
+.about-us-section-subtitle {
+  color: #01723B;
+  font-size: 32px;
+}
+
 .best-chemistry {
   margin-bottom: 200px;
 }
@@ -649,13 +658,6 @@ img {
 }
 .best-chemistry__title-block {
   width: calc(46% - 115px / 2);
-}
-.best-chemistry__title {
-  margin-bottom: 48px;
-}
-.best-chemistry__subtitle {
-  color: #01723B;
-  font-size: 32px;
 }
 .best-chemistry__info {
   width: calc(54% - 115px / 2);
@@ -683,6 +685,30 @@ img {
   font-weight: 400;
   font-size: 24px;
   margin-bottom: 32px;
+}
+.our-values__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 115px;
+}
+.our-values__title-block {
+  width: calc(46% - 115px / 2);
+}
+.our-values__info-block {
+  width: calc(54% - 115px / 2);
 }
 .awards {
   margin: 200px 0;

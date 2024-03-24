@@ -1,0 +1,12 @@
+$sectionGap: 115px;
+$sectionPartBigger: calc(54% - #{$sectionGap} / 2);
+$sectionPartSmaller: calc(46% - #{$sectionGap} / 2);
+
+.about-us-section-title {
+  margin-bottom: 48px;
+}
+
+.about-us-section-subtitle {
+  color: $colorGreen;
+  font-size: 32px;
+}

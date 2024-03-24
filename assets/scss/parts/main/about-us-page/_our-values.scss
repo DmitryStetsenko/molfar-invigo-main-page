@@ -1,0 +1,26 @@
+.our-values {
+  &__content {
+    @include flex;
+    gap: $sectionGap;
+  }
+
+  &__title-block {
+    width: $sectionPartSmaller;
+  }
+  &__title {}
+  &__thumbnail {
+    img {
+    }
+  }
+
+  &__info-block {
+    width: $sectionPartBigger;
+  }
+  &__descr {}
+}
+
+.our-values-info {
+  &__title {}
+  &__principles {}
+  &__principle {}
+}
