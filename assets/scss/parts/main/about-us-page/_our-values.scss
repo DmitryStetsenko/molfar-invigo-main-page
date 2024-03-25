@@ -1,6 +1,6 @@
 .our-values {
   &__content {
-    @include flex;
+    @include flex(space-between, stretch);
     gap: $sectionGap;
   }
 
@@ -8,6 +8,9 @@
     width: $sectionPartSmaller;
   }
   &__title {}
+  &__subtitle {
+    margin-bottom: 156px;
+  }
   &__thumbnail {
     img {
     }
@@ -16,11 +19,38 @@
   &__info-block {
     width: $sectionPartBigger;
   }
-  &__descr {}
+  &__descr {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 48px;
+  }
 }
 
 .our-values-info {
-  &__title {}
-  &__principles {}
-  &__principle {}
+  &__title {
+    margin-bottom: 48px;
+  }
+  &__principles {
+    padding-left: 10px;
+  }
+  &__principle {
+    $dotSize: 4px;
+    @include flex(flex-start, flex-start);
+    gap: 10px;
+    margin-bottom: 65px;
+
+
+    &::before {
+      content: '';
+      width: $dotSize;
+      min-width: $dotSize;
+      height: $dotSize;
+      border-radius: 50%;
+      background: $mainColor;
+      transform: translateY(7px);
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }

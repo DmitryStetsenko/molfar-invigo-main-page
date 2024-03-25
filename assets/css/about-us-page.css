@@ -632,6 +632,7 @@ img {
 .about-us-section-subtitle {
   color: #01723B;
   font-size: 32px;
+  line-height: 48px;
 }
 
 .best-chemistry {
@@ -690,12 +691,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -707,9 +708,58 @@ img {
 .our-values__title-block {
   width: calc(46% - 115px / 2);
 }
+.our-values__subtitle {
+  margin-bottom: 156px;
+}
 .our-values__info-block {
   width: calc(54% - 115px / 2);
 }
+.our-values__descr {
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 48px;
+}
+
+.our-values-info__title {
+  margin-bottom: 48px;
+}
+.our-values-info__principles {
+  padding-left: 10px;
+}
+.our-values-info__principle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 10px;
+  margin-bottom: 65px;
+}
+.our-values-info__principle::before {
+  content: "";
+  width: 4px;
+  min-width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #212925;
+  -webkit-transform: translateY(7px);
+      -ms-transform: translateY(7px);
+          transform: translateY(7px);
+}
+.our-values-info__principle:last-child {
+  margin-bottom: 0;
+}
+
 .awards {
   margin: 200px 0;
 }
