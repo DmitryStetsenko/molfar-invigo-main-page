@@ -356,6 +356,11 @@ img {
   font-size: 16px;
   margin-bottom: 48px;
 }
+.youtube-video-block iframe {
+  width: 100%;
+  height: 630px;
+}
+
 .header {
   color: white;
   font-size: 14px;
@@ -633,6 +638,7 @@ img {
   color: #01723B;
   font-size: 32px;
   line-height: 48px;
+  margin-bottom: 48px;
 }
 
 .best-chemistry {
@@ -686,6 +692,9 @@ img {
   font-weight: 400;
   font-size: 24px;
   margin-bottom: 32px;
+}
+.our-values {
+  margin-bottom: 200px;
 }
 .our-values__content {
   display: -webkit-box;
@@ -758,6 +767,92 @@ img {
 }
 .our-values-info__principle:last-child {
   margin-bottom: 0;
+}
+
+.our-mission {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-bottom: 200px;
+  height: 615px;
+  background: url("./../img/about-us-page/mission.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 15px;
+}
+.our-mission__content-block {
+  max-width: 740px;
+}
+.our-mission__title {
+  color: white;
+  text-align: center;
+}
+.our-mission__subtitle {
+  color: white;
+  text-align: center;
+}
+.our-mission__content {
+  color: white;
+}
+
+.our-vision {
+  margin-bottom: 200px;
+}
+.our-vision__main-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 120px;
+  margin-bottom: 200px;
+}
+.our-vision__main-content {
+  width: 50%;
+}
+.our-vision__text {
+  margin-bottom: 30px;
+}
+.our-vision__text:last-child {
+  margin-bottom: 0;
+}
+.our-vision__thumbnail {
+  width: 50%;
+}
+.our-vision__thumbnail img {
+  width: 362px;
+}
+.our-vision__video-block {
+  margin-bottom: 48px;
+}
+.our-vision__additional-info {
+  max-width: 740px;
+  margin: 0 auto;
 }
 
 .awards {

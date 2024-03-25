@@ -1,4 +1,5 @@
 .our-values {
+  margin-bottom: $sectionMargin;
   &__content {
     @include flex(space-between, stretch);
     gap: $sectionGap;

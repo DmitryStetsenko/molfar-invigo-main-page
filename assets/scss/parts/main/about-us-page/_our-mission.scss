@@ -1,0 +1,28 @@
+.our-mission {
+  @include flex;
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-bottom: $sectionMargin;
+  
+  height: 615px;
+  background: url('./../img/about-us-page/mission.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0 15px;
+  
+  &__content-block {
+    max-width: 740px;
+  }
+  &__title {
+    color: white;
+    text-align: center;
+  }
+  &__subtitle {
+    color: white;
+    text-align: center;
+  }
+  &__content {
+    color: white;
+  }
+}

@@ -1,0 +1,37 @@
+.our-vision {
+  margin-bottom: $sectionMargin;
+
+  &__main-info {
+    @include flex(flex-start, flex-start);
+    gap: 120px;
+    margin-bottom: $sectionMargin;
+  }
+  &__main-content {
+    width: 50%;
+  }
+  &__title {}
+  &__subtitle {
+  }
+  &__text-block {}
+  &__text {
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__thumbnail {
+    width: 50%;
+    img {
+      width: 362px;
+    }
+  }
+
+  &__video-block {
+    margin-bottom: 48px;
+  }
+
+  &__additional-info {
+    max-width: 740px;
+    margin: 0 auto;
+  }
+}
