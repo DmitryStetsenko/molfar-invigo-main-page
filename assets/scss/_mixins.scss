@@ -24,3 +24,8 @@
   object-fit: $of;
   object-position: $op;
 }
+
+@mixin imgResp($maxWidth: 100%) {
+  width: 100%;
+  max-width: $maxWidth;
+}

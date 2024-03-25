@@ -641,6 +641,21 @@ img {
   margin-bottom: 48px;
 }
 
+@media (max-width: 760px) {
+  .about-us-section-title {
+    margin-bottom: 32px;
+  }
+  .about-us-section-subtitle {
+    font-size: 4.5vw;
+    line-height: 6vw;
+  }
+}
+@media (max-width: 590px) {
+  .about-us-section-subtitle {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
 .best-chemistry {
   margin-bottom: 200px;
 }
@@ -693,6 +708,43 @@ img {
   font-size: 24px;
   margin-bottom: 32px;
 }
+@media (max-width: 760px) {
+  .best-chemistry {
+    margin-bottom: 128px;
+  }
+  .best-chemistry__info-block {
+    margin-bottom: 128px;
+    gap: 60px;
+  }
+  .best-chemistry__title-block {
+    width: 30%;
+  }
+  .best-chemistry__subtitle {
+    margin-bottom: 0;
+  }
+  .best-chemistry__info {
+    width: 70%;
+  }
+}
+@media (max-width: 590px) {
+  .best-chemistry__info-block {
+    display: block;
+    margin-bottom: 80px;
+  }
+  .best-chemistry__title-block {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  .best-chemistry__info {
+    width: 100%;
+  }
+  .best-chemistry__thumbnail {
+    height: 250px;
+  }
+  .best-chemistry-info-item {
+    margin-bottom: 80px;
+  }
+}
 .our-values {
   margin-bottom: 200px;
 }
@@ -719,6 +771,17 @@ img {
 }
 .our-values__subtitle {
   margin-bottom: 156px;
+}
+.our-values__thumbnail img {
+  width: 100%;
+  max-width: 356px;
+}
+.our-values__thumbnail-mobile {
+  display: none;
+}
+.our-values__thumbnail-mobile img {
+  width: 100%;
+  max-width: 200px;
 }
 .our-values__info-block {
   width: calc(54% - 115px / 2);
@@ -752,7 +815,9 @@ img {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   gap: 10px;
-  margin-bottom: 65px;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #DBDDDC;
 }
 .our-values-info__principle::before {
   content: "";
@@ -769,6 +834,46 @@ img {
   margin-bottom: 0;
 }
 
+@media (max-width: 760px) {
+  .our-values {
+    margin-bottom: 128px;
+  }
+  .our-values__content {
+    gap: 60px;
+  }
+  .our-values__title-block {
+    width: 30%;
+    margin-bottom: 64px;
+  }
+  .our-values__subtitle {
+    margin-bottom: 0;
+  }
+  .our-values__info-block {
+    width: 70%;
+  }
+}
+@media (max-width: 590px) {
+  .our-values__content {
+    display: block;
+  }
+  .our-values__title-block {
+    width: 100%;
+  }
+  .our-values__info-block {
+    width: 100%;
+  }
+  .our-values__thumbnail {
+    display: none;
+  }
+  .our-values__thumbnail-mobile {
+    display: block;
+    margin: 80px auto;
+    width: 200px;
+  }
+  .our-values__descr {
+    margin-bottom: 0;
+  }
+}
 .our-mission {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -810,6 +915,11 @@ img {
   color: white;
 }
 
+@media (max-width: 760px) {
+  .our-mission {
+    margin-bottom: 128px;
+  }
+}
 .our-vision {
   margin-bottom: 200px;
 }
@@ -829,7 +939,7 @@ img {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  gap: 120px;
+  gap: 115px;
   margin-bottom: 200px;
 }
 .our-vision__main-content {
@@ -845,7 +955,15 @@ img {
   width: 50%;
 }
 .our-vision__thumbnail img {
-  width: 362px;
+  width: 100%;
+  max-width: 362px;
+}
+.our-vision__thumbnail-mobile {
+  display: none;
+}
+.our-vision__thumbnail-mobile img {
+  width: 100%;
+  max-width: 362px;
 }
 .our-vision__video-block {
   margin-bottom: 48px;
@@ -855,6 +973,44 @@ img {
   margin: 0 auto;
 }
 
+@media (max-width: 760px) {
+  .our-vision {
+    margin-bottom: 128px;
+  }
+  .our-vision__main-info {
+    margin-bottom: 128px;
+    gap: 60px;
+  }
+  .our-vision__main-content {
+    width: 70%;
+  }
+  .our-vision__thumbnail {
+    width: 30%;
+  }
+}
+@media (max-width: 590px) {
+  .our-vision__main-info {
+    display: block;
+  }
+  .our-vision__main-content {
+    width: 100%;
+  }
+  .our-vision__thumbnail {
+    display: none;
+  }
+  .our-vision__thumbnail-mobile {
+    display: block;
+    max-width: 200px;
+    margin: 48px auto;
+    -webkit-transform: translateX(-20px);
+        -ms-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  .our-vision__thumbnail-mobile img {
+    width: 100%;
+    max-width: 200px;
+  }
+}
 .awards {
   margin: 200px 0;
 }

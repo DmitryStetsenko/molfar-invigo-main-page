@@ -26,3 +26,9 @@
     color: white;
   }
 }
+
+@media (max-width: $bp4) {
+  .our-mission {
+    margin-bottom: $mobileSectionMargin;
+  }
+}

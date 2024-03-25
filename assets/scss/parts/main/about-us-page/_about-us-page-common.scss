@@ -1,4 +1,5 @@
 $sectionGap: 115px;
+$mobileSectionGap: 60px;
 $sectionPartBigger: calc(54% - #{$sectionGap} / 2);
 $sectionPartSmaller: calc(46% - #{$sectionGap} / 2);
 
@@ -11,4 +12,22 @@ $sectionPartSmaller: calc(46% - #{$sectionGap} / 2);
   font-size: 32px;
   line-height: 48px;
   margin-bottom: 48px;
+}
+
+@media (max-width: $bp4) {
+  .about-us-section-title {
+    margin-bottom: 32px;
+  }
+  
+  .about-us-section-subtitle {
+    font-size: 4.5vw;
+    line-height: 6vw;
+  }
+}
+
+@media (max-width: $bp5) {
+  .about-us-section-subtitle {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }

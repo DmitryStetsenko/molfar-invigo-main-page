@@ -3,7 +3,7 @@
 
   &__main-info {
     @include flex(flex-start, flex-start);
-    gap: 120px;
+    gap: $sectionGap;
     margin-bottom: $sectionMargin;
   }
   &__main-content {
@@ -22,7 +22,13 @@
   &__thumbnail {
     width: 50%;
     img {
-      width: 362px;
+      @include imgResp(362px);
+    }
+    &-mobile {
+      display: none;
+      img {
+        @include imgResp(362px);
+      }
     }
   }
 
@@ -33,5 +39,44 @@
   &__additional-info {
     max-width: 740px;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: $bp4) {
+  .our-vision {
+    margin-bottom: $mobileSectionMargin;
+    &__main-info {
+      margin-bottom: $mobileSectionMargin;
+      gap: $mobileSectionGap;
+    }
+    &__main-content {
+      width: 70%;
+    }
+    &__thumbnail {
+      width: 30%;
+    }
+  }
+}
+
+@media (max-width: $bp5) {
+  .our-vision {
+    &__main-info {
+      display: block;
+    }
+    &__main-content {
+      width: 100%;
+    }
+    &__thumbnail {
+      display: none;
+      &-mobile {
+        display: block;
+        max-width: 200px;
+        margin: 48px auto;
+        transform: translateX(-20px);
+        img {
+          @include imgResp(200px);
+        }
+      }
+    }
   }
 }
