@@ -44,11 +44,16 @@ $(function($) {
   
   toggleHeaderMenuInit();
   
-  initCustomSelect();
+  initCustomSelect('.products-filters__item');
   
   // FUNCTIONS -------------------
-  function initCustomSelect() {
-    $('.products-filters__item').select2({
+  function initCustomSelect(selector) {
+    console.log($(selector));
+    if (!$(selector)) {
+      return;
+    }
+
+    $(selector).select2({
       minimumResultsForSearch: -1,
       width: '100%',
       // dropdownAutoWidth: true,
