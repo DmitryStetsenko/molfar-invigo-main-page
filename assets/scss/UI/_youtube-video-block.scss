@@ -10,3 +10,13 @@
     }
   }
 }
+
+@media (max-width: $bp5) {
+  .youtube-video-block {
+    &_smaller {
+      iframe {
+        height: 667px;
+      }
+    }
+  }
+}

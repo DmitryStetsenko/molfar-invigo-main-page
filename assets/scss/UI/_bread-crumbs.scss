@@ -6,3 +6,9 @@
     
   }
 }
+
+@media (max-width: $bp4) {
+  .breadcrumbs {
+    margin-bottom: 32px;
+  }
+}

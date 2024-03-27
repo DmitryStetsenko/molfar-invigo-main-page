@@ -377,6 +377,11 @@ img {
   font-size: 16px;
   margin-bottom: 48px;
 }
+@media (max-width: 760px) {
+  .breadcrumbs {
+    margin-bottom: 32px;
+  }
+}
 .youtube-video-block iframe {
   width: 100%;
   height: 630px;
@@ -385,6 +390,11 @@ img {
   height: 414px;
 }
 
+@media (max-width: 590px) {
+  .youtube-video-block_smaller iframe {
+    height: 667px;
+  }
+}
 .header {
   color: white;
   font-size: 14px;

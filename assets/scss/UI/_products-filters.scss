@@ -15,3 +15,9 @@
   background-color: $colorGreen;
   color: #fff;
 }
+
+@media (max-width: $bp5) {
+  .products-filters {
+    gap: 0;
+  }
+}

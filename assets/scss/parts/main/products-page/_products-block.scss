@@ -4,10 +4,29 @@
     display: grid;
     gap: 24px;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
     margin-bottom: 80px;
   }
 
   &__pagination {
 
+  }
+}
+
+@media (max-width: $bp2) {
+  .products-block {
+    &__list {
+      max-width: 750px;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: $bp4) {
+  .products-block {
+    &__list {
+      max-width: 360px;
+      grid-template-columns: 1fr;
+    }
   }
 }

@@ -15,3 +15,9 @@
     margin-top: $sectionTitleAllPageMb;
   }
 }
+
+@media (max-width: $bp5) {
+  .products-descr {
+    margin-bottom: 80px;
+  }
+}

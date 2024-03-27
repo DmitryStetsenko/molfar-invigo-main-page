@@ -46,3 +46,9 @@
   }
   &__name {}
 }
+
+@media (max-width: $bp5) {
+  .product {
+    background: rgba(#212925, 4%);
+  }
+}

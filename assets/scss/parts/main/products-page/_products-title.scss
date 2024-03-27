@@ -6,3 +6,14 @@
   }
 
 }
+
+@media (max-width: $bp4) {
+  .products-title {
+    margin-bottom: 80px;
+  
+    &__title {
+      margin-bottom: 40px;
+    }
+  
+  }
+}
