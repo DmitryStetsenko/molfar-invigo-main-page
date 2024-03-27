@@ -1,0 +1,44 @@
+.documents-download-block {
+  $iconSize: 21.33px;
+  &__item {
+    @include flex(space-between);
+    gap: 16px;
+    padding: 32px 0;
+    border-top: 1px solid $colorLightGrey;
+    font-size: 24px;
+    color: $mainColor;
+    transition: border-color .3s, color .3s;
+
+    &:hover {
+      cursor: pointer;
+      border-color: $colorGreen;
+      color: $colorGreen;
+
+      & + a {
+        border-top: 1px solid $colorGreen;
+      }
+
+      path {
+        fill: $colorGreen;
+      }
+    }
+
+    &:last-child {
+      border-bottom: 1px solid $colorLightGrey;
+      &:hover {
+        border-color: $colorGreen;
+      }
+    }
+  }
+  &__text {}
+
+  svg {
+    width: $iconSize;
+    height: $iconSize;
+    transform: rotate(-45deg);
+  }
+  path {
+    fill: $colorGrey;
+    transition: fill .3s;
+  }
+}
