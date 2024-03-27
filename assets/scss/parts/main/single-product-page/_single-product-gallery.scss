@@ -1,0 +1,48 @@
+.single-product-gallery {
+  $smallerBlockHeight: 226px;
+
+  position: relative;
+  padding-bottom: calc(#{$smallerBlockHeight} / 2);
+  margin-bottom: $sectionMargin;
+}
+
+.single-product-gallery-bigger {
+  @include flex;
+
+  max-width: 1920px;
+  margin: 0 auto;
+
+  gap: 24px;
+  &__item {
+    flex: 1;
+    height: 354px;
+
+    img {
+      @include objFit;
+    }
+  }
+}
+
+.single-product-gallery-smaller {
+  @include flex;
+
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+
+  margin-top: -200px;
+  gap: 24px;
+  padding: 24px;
+  background: white;
+  width: 100%;
+
+  &__item {
+    flex: 1;
+    height: 178px;
+
+    img {
+      @include objFit;
+    }
+  }
+}
