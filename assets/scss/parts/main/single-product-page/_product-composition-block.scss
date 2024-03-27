@@ -1,0 +1,28 @@
+.product-composition-block {
+  margin-bottom: $sectionMargin;
+
+  &__title {
+    margin-bottom: 64px;
+  }
+  &__list {
+    margin-bottom: 64px;
+  }
+  &__item {
+    @include flex(flex-start);
+
+    padding: 40px 0;
+    border-bottom: 1px solid $colorLightGrey;
+
+    &:before {
+      content: attr(data-number);
+      font-size: 32px;
+      margin-right: 140px;
+    }
+
+    &:first-child {
+      border-top: 1px solid $colorLightGrey;
+    }
+  }
+
+  &__info {}
+}

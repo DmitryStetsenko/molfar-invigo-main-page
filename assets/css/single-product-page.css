@@ -805,6 +805,95 @@ img {
   border-radius: calc(43px / 2);
 }
 
+.product-composition-block {
+  margin-bottom: 200px;
+}
+.product-composition-block__title {
+  margin-bottom: 64px;
+}
+.product-composition-block__list {
+  margin-bottom: 64px;
+}
+.product-composition-block__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 40px 0;
+  border-bottom: 1px solid #DBDDDC;
+}
+.product-composition-block__item:before {
+  content: attr(data-number);
+  font-size: 32px;
+  margin-right: 140px;
+}
+.product-composition-block__item:first-child {
+  border-top: 1px solid #DBDDDC;
+}
+.product-additional-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 40px;
+  border: 1px solid #01723B;
+  padding: 48px 95px;
+}
+.product-additional-info__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 56px;
+  min-width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(1, 114, 59, 0.08);
+}
+.product-additional-info__icon svg {
+  width: 20px;
+  height: 20px;
+}
+.product-additional-info__icon path {
+  fill: #01723B;
+}
+.product-additional-info__text {
+  color: #01723B;
+}
+
 .awards {
   margin: 200px 0;
 }

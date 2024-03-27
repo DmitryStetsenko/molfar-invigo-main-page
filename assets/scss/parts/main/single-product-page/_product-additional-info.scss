@@ -1,0 +1,29 @@
+.product-additional-info {
+  $iconBlockSize: 56px;
+  $iconSize: 20px;
+
+  @include flex(flex-start);
+  gap: 40px;
+
+  border: 1px solid $colorGreen;
+  padding: 48px 95px;
+  &__icon {
+    @include flex;
+    width: $iconBlockSize;
+    min-width: $iconBlockSize;
+    height: $iconBlockSize;
+    border-radius: 50%;
+    background: rgba($colorGreen, 8%);
+
+    svg {
+      width: $iconSize;
+      height: $iconSize;
+    }
+    path {
+      fill: $colorGreen;
+    }
+  }
+  &__text {
+    color: $colorGreen;
+  }
+}
