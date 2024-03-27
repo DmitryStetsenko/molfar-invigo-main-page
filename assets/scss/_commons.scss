@@ -47,6 +47,9 @@ img {
     padding-left: 0;
     margin: 0;
   }
+  &_narrow {
+    max-width: 736px;
+  }
 }
      
 .section-title {
@@ -58,6 +61,23 @@ img {
 
   &_all-page {
     margin-bottom: $sectionTitleAllPageMb;
+  }
+}
+
+.block-title {
+  font-size: 48px;
+  line-height: 62px;
+  span {
+    color: $colorGreen;
+  }
+}
+
+.content-text-block {
+  &__text {
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 

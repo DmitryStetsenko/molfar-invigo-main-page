@@ -1,0 +1,40 @@
+@import "var";
+@import "mixins";
+@import "fonts";
+
+@import "commons";
+
+// custom select -------
+@import "custom-select";
+// ----------------------
+
+@import "UI/toggle-menu-btn";
+@import "UI/arrow-icon";
+@import "UI/text-btn";
+@import "UI/bread-crumbs";
+@import "UI/youtube-video-block";
+@import "UI/btns-group";
+@import "./UI/products-filters";
+@import "./UI/product";
+
+@import "./parts/header/header";
+
+// main
+@import "./parts/main/main";
+
+// products-page-parts
+@import "./parts/main/products-page/products-title";
+@import "./parts/main/products-page/products-descr";
+@import "./parts/main/products-page/products-filters-block";
+@import "./parts/main/products-page/products-block";
+// -------------------
+
+@import "./parts/main/awards";
+@import "./parts/main/about-us";
+// ---- main
+
+@import "./parts/footer/footer";
+
+body {
+  padding-top: $bodyPaddingTop;
+}

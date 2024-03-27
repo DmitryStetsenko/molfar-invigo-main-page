@@ -1,0 +1,13 @@
+.products-block {
+  margin-bottom: 180px;
+  &__list {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 80px;
+  }
+
+  &__pagination {
+
+  }
+}

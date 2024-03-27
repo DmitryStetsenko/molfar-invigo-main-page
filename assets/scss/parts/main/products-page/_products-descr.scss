@@ -1,0 +1,17 @@
+.products-descr {
+  margin-bottom: $sectionTitleAllPageMb;
+
+  &__breadcrumbs {}
+
+  &__title {
+    margin-bottom: 48px;
+  }
+
+  &__text-block {
+    margin-bottom: 48px;
+  }
+
+  &__video-block {
+    margin-top: $sectionTitleAllPageMb;
+  }
+}

@@ -1,5 +1,6 @@
 .text-btn {
   @include flex(space-between);
+  display: inline-flex;
   gap: 16px;
   text-transform: uppercase;
   color: $colorGreen;

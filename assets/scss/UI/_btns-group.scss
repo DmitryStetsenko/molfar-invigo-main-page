@@ -1,0 +1,26 @@
+.btns-group {
+  @include flex(flex-start);
+  gap: 24px;
+  &__item {
+    padding: 10px 25px;
+    color: $mainColor;
+    border: 1px solid silver;
+    border-radius: 25px;
+    transition: 
+      border-color .3s,
+      color .3s,
+      background .3s;
+
+    &:hover {
+      cursor: pointer;
+      border-color: $mainColor;
+      background: $mainColor;
+      color: white;
+    }
+    &_active {
+      border-color: $mainColor;
+      background: $mainColor;
+      color: white;
+    }
+  }
+}

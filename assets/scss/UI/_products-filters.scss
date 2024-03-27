@@ -1,0 +1,17 @@
+.products-filters {
+  @include flex(space-between);
+  gap: 48px;
+  &__item {}
+
+  .select2-container--default .select2-selection--single {
+    border: 1px solid transparent;
+  }
+}
+
+.select2-container--open .select2-dropdown--below {
+  border-top: 1px solid #aaa;
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: $colorGreen;
+  color: #fff;
+}

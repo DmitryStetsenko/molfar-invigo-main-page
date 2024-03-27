@@ -1,0 +1,48 @@
+.product {
+  color: $mainColor;
+  background: rgba(black, 2%);
+  padding: 48px 27px;
+  transition: 
+    background .3s,
+    border-color .3s;
+  border: 1px solid transparent;
+
+  &:hover {
+    background: linear-gradient(0deg, 
+    rgba(235,244,239,1) 0%, 
+    rgba(255,255,255,1) 50%);
+    border-color: $colorGreen;
+
+    .arrow-icon_big-green {
+      background: $colorGreen;
+      path {
+        fill: white;
+      }
+    }
+  }
+
+  &:visited {
+    color: $mainColor;
+  }
+
+  &__meta-info {
+    @include flex;
+    margin-bottom: 48px;
+  }
+  &__meta-info-item {}
+
+  &__thumbnail {
+    width: 100%;
+    height: 281px;
+    padding: 24px 0;
+    img {
+      @include objFit(contain);
+    }
+  }
+
+  &__name-block {
+    @include flex(space-between);
+    gap: 24px;
+  }
+  &__name {}
+}
