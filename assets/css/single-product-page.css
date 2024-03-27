@@ -978,6 +978,162 @@ img {
      object-position: center;
 }
 
+.product-regulations-norms__title {
+  margin-bottom: 80px;
+}
+.product-regulations-norms__table {
+  margin-bottom: 80px;
+}
+
+.regulations-norms-table__title {
+  font-size: 24px;
+  margin-bottom: 40px;
+  color: #01723B;
+}
+.regulations-norms-table__body {
+  border: 1px solid #DBDDDC;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.regulations-norms-table__cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  text-align: center;
+  padding: 24px 16px;
+  border-right: 1px solid #DBDDDC;
+  border-bottom: 1px solid #DBDDDC;
+}
+.regulations-norms-table__cell:nth-child(5n) {
+  border-right: none;
+}
+.regulations-norms-table__cell:nth-last-child(-n+5) {
+  border-bottom: none;
+}
+.regulations-norms-table__cell_th {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media (max-width: 860px) {
+  .regulations-norms-table__title {
+    margin-bottom: 32;
+  }
+  .regulations-norms-table__body {
+    grid-template-columns: 2fr 3fr;
+  }
+  .regulations-norms-table__cell {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .regulations-norms-table__cell:nth-child(5n) {
+    border-right: 1px solid #DBDDDC;
+  }
+  .regulations-norms-table__cell:nth-last-child(-n+5) {
+    border-bottom: 1px solid #DBDDDC;
+  }
+  .regulations-norms-table__cell:nth-child(1) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .regulations-norms-table__cell:nth-child(2) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .regulations-norms-table__cell:nth-child(3) {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  .regulations-norms-table__cell:nth-child(4) {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+  }
+  .regulations-norms-table__cell:nth-child(5) {
+    -webkit-box-ordinal-group: 10;
+        -ms-flex-order: 9;
+            order: 9;
+    border-bottom: none;
+  }
+  .regulations-norms-table__cell:nth-child(6) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    border-right: none;
+  }
+  .regulations-norms-table__cell:nth-child(7) {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    border-right: none;
+  }
+  .regulations-norms-table__cell:nth-child(8) {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+    border-right: none;
+  }
+  .regulations-norms-table__cell:nth-child(9) {
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
+    border-right: none;
+  }
+  .regulations-norms-table__cell:nth-child(10) {
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
+    border-right: none;
+    border-bottom: none;
+  }
+  .regulations-norms-table__cell_th {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+@media (max-width: 590px) {
+  .regulations-norms-table__body {
+    grid-template-columns: 1fr;
+  }
+  .regulations-norms-table__cell {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    text-align: left;
+  }
+  .regulations-norms-table__cell:nth-child(n) {
+    border-right: none;
+  }
+  .regulations-norms-table__cell:nth-child(-n+5) {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .regulations-norms-table__cell_th {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    text-align: left;
+  }
+}
 .awards {
   margin: 200px 0;
 }
