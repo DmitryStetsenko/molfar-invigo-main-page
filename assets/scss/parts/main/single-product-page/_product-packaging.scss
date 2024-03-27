@@ -1,0 +1,19 @@
+.product-packaging {
+  $itemW: 86px;
+  $itemH: 43px;
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__list {
+    @include flex(flex-start);
+    gap: 16px;
+  }
+  &__item {
+    @include flex;
+    width: $itemW;
+    height: $itemH;
+    background: rgba($colorGreen, 8%);
+    color: $colorGreen;
+    border-radius: calc(#{$itemH} / 2);
+  }
+}

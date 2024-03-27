@@ -48,8 +48,7 @@ $(function($) {
   
   // FUNCTIONS -------------------
   function initCustomSelect(selector) {
-    console.log($(selector));
-    if (!$(selector)) {
+    if (!$(selector).length) {
       return;
     }
 

@@ -1,0 +1,27 @@
+.product-active-substance {
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__list {
+    color: $colorGreen;
+    padding-left: 10px;
+  }
+  &__item {
+    @include flex(flex-start);
+    gap: 10px;
+    margin-bottom: 5px;
+
+    &::before {
+      $dotSize: 4px;
+      content: '';
+      width:$dotSize;
+      height:$dotSize;
+      border-radius: 50%;
+      background: $colorGreen;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

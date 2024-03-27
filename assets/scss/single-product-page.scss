@@ -15,6 +15,10 @@
 @import "./parts/main/main";
 
 // single-products-page-parts
+@import "./parts/main/single-product-page/single-product-page-common";
+@import "./parts/main/single-product-page/single-product-title-block.scss";
+@import "./parts/main/single-product-page/product-active-substance";
+@import "./parts/main/single-product-page/product-packaging";
 // -------------------
 
 @import "./parts/main/awards";

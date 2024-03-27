@@ -1,0 +1,45 @@
+.single-product-title-block {
+  $thumbW: 400px;
+  $thumbH: 475px;
+
+  margin-bottom: $sectionMargin;
+
+  &__content {
+    @include flex(flex-start, stretch);
+    gap: 24px;
+    padding-bottom: 80px;
+  }
+  &__side {
+    width: 50%;
+
+    &_thumbnail {
+      @include flex;
+    }
+  }
+
+  &__thumbnail {
+    width: $thumbW;
+    height: $thumbH;
+    img {
+      @include objFit(contain);
+    }
+  }
+
+  &__row {
+    padding: 48px 0;
+    border-bottom: 1px solid $colorLightGrey;
+
+    &:first-child {
+      padding-top: 0;
+    }
+    &:last-child {
+      padding-bottom: none;
+      border: none;
+    }
+  }
+  &__title {
+    margin-bottom: 48px;
+  }
+  &__descr {}
+}
+
