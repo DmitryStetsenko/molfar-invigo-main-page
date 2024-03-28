@@ -735,7 +735,6 @@ img {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   gap: 24px;
-  padding-bottom: 80px;
 }
 .single-product-title-block__side {
   width: 50%;
