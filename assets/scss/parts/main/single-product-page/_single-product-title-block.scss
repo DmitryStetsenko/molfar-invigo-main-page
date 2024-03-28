@@ -23,6 +23,9 @@
     img {
       @include objFit(contain);
     }
+    &_mobile {
+      display: none;
+    }
   }
 
   &__row {
@@ -33,7 +36,7 @@
       padding-top: 0;
     }
     &:last-child {
-      padding-bottom: none;
+      padding-bottom: 0;
       border: none;
     }
   }
@@ -43,3 +46,47 @@
   &__descr {}
 }
 
+@media (max-width: $bp4) {
+  .single-product-title-block {
+    margin-bottom: 80px;
+
+    &__content {
+      flex-direction: column;
+      gap: 80px;
+      padding-bottom: 0;
+    }
+    &__side {
+      width: 100%;
+    }
+    &__title {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: $bp5) {
+  .single-product-title-block {
+    &__side {
+      &_thumbnail {
+        display: none;
+      }
+    }
+
+    &__thumbnail {
+      &_mobile {
+        display: block;
+        width: 100%;
+        height: 470px;
+        margin-top: 80px;
+      }
+    }
+    &__row {
+      padding: 40px 0;
+      &:first-child {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 80px;
+      }
+    }
+  }
+}

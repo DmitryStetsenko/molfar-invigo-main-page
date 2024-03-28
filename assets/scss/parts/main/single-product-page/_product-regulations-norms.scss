@@ -15,3 +15,11 @@
     margin: 0 auto;
   }
 }
+
+@media (max-width: $bp4) {
+  .product-regulations-norms{
+    &__title {
+      margin-bottom: 64px;
+    }
+  }
+}

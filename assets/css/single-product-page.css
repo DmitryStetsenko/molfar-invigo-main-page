@@ -436,6 +436,11 @@ img {
   transition: fill 0.3s;
 }
 
+@media (max-width: 590px) {
+  .documents-download-block__item {
+    font-size: 16px;
+  }
+}
 .header {
   color: white;
   font-size: 14px;
@@ -764,6 +769,9 @@ img {
   -o-object-position: center;
      object-position: center;
 }
+.single-product-title-block__thumbnail_mobile {
+  display: none;
+}
 .single-product-title-block__row {
   padding: 48px 0;
   border-bottom: 1px solid #DBDDDC;
@@ -772,11 +780,49 @@ img {
   padding-top: 0;
 }
 .single-product-title-block__row:last-child {
-  padding-bottom: none;
+  padding-bottom: 0;
   border: none;
 }
 .single-product-title-block__title {
   margin-bottom: 48px;
+}
+@media (max-width: 760px) {
+  .single-product-title-block {
+    margin-bottom: 80px;
+  }
+  .single-product-title-block__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 80px;
+    padding-bottom: 0;
+  }
+  .single-product-title-block__side {
+    width: 100%;
+  }
+  .single-product-title-block__title {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 590px) {
+  .single-product-title-block__side_thumbnail {
+    display: none;
+  }
+  .single-product-title-block__thumbnail_mobile {
+    display: block;
+    width: 100%;
+    height: 470px;
+    margin-top: 80px;
+  }
+  .single-product-title-block__row {
+    padding: 40px 0;
+  }
+  .single-product-title-block__row:first-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 80px;
+  }
 }
 .product-active-substance__title {
   margin-bottom: 24px;
@@ -895,6 +941,32 @@ img {
 .product-composition-block__item:first-child {
   border-top: 1px solid #DBDDDC;
 }
+@media (max-width: 760px) {
+  .product-composition-block {
+    margin-bottom: 80px;
+  }
+  .product-composition-block__item::before {
+    margin-right: 64px;
+  }
+}
+@media (max-width: 590px) {
+  .product-composition-block__title {
+    margin-bottom: 40px;
+  }
+  .product-composition-block__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .product-composition-block__item::before {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+}
 .product-additional-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -948,6 +1020,23 @@ img {
   color: #01723B;
 }
 
+@media (max-width: 760px) {
+  .product-additional-info {
+    padding: 40px 28px;
+    gap: 24px;
+  }
+}
+@media (max-width: 590px) {
+  .product-additional-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
 .single-product-gallery {
   position: relative;
   padding-bottom: calc(226px / 2);
@@ -1032,6 +1121,59 @@ img {
      object-position: center;
 }
 
+.single-product-gallery-mobile {
+  display: none;
+  width: 100%;
+  height: 600px;
+  margin-bottom: 80px;
+}
+.single-product-gallery-mobile img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media (max-width: 1140px) {
+  .single-product-gallery {
+    padding-bottom: 0;
+  }
+  .single-product-gallery-bigger {
+    padding: 0 15px;
+    margin-bottom: 24px;
+  }
+  .single-product-gallery-smaller {
+    position: static;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    padding: 0 15px;
+    margin-top: 0;
+  }
+}
+@media (max-width: 760px) {
+  .single-product-gallery {
+    margin-bottom: 80px;
+  }
+  .single-product-gallery-bigger {
+    gap: 16px;
+  }
+  .single-product-gallery-smaller {
+    gap: 16px;
+    padding: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .single-product-gallery-bigger,
+  .single-product-gallery-smaller {
+    display: none;
+  }
+  .single-product-gallery-mobile {
+    display: block;
+  }
+}
 .product-regulations-norms {
   margin-bottom: 80px;
 }
@@ -1049,6 +1191,11 @@ img {
   margin: 0 auto;
 }
 
+@media (max-width: 760px) {
+  .product-regulations-norms__title {
+    margin-bottom: 64px;
+  }
+}
 .regulations-norms-table__title {
   font-size: 24px;
   margin-bottom: 40px;
