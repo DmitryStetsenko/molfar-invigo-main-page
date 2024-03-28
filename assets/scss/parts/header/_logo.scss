@@ -1,1 +1,22 @@
-.logo {}
+.logo {
+  padding-top: 20px;
+  width: 285px;
+  min-width: 285px;
+  img {
+    height: 56px;
+  }
+
+  &__menu-title {
+    font-size: 32px;
+    margin-top: 20px;
+    text-transform: none;
+    padding: 24px 24px 24px 0;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: $bp1) {
+  .logo {
+    padding-top: 0;
+  }
+}

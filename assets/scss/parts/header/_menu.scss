@@ -1,14 +1,23 @@
 .menu {
+  @include flex;
+
+  position: relative;
+  width: 100%;
   &__list {
-    @include flex;
+    @include flex(center, flex-start);
     gap: 21px;
   }
 }
 
 .menu-item {
+  $parent: ".menu-item";
+  // position: relative;
   &__header {
     @include flex(flex-start, center);
     white-space: nowrap;
+    padding: 16px 0;
+    border-bottom: 2px solid transparent;
+    transition: border .3s;
   }
   &__link {}
   &__open-btn {
@@ -17,9 +26,72 @@
 
     width: $size;
     height: $size;
+    cursor: pointer;
+  }
+  &__content {
+    height: $deskTopOpenMenuHeight;
+    display: none;
+  }
+
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   width: 0;
+  //   height: 2px;
+  //   background: white;
+  //   bottom: 0;
+  //   left: 0;
+  //   transition: width .3s;
+  // }
+
+  &:hover {
+    #{$parent}__header {
+      border-color: white;
+    }
+    // &::after {
+    //   width: 100%;
+    // }
+  }
+}
+
+.sub-menu {
+  display: none;
+  $iconSize: 16px;
+
+  height: 160px;
+  width: 100%;
+  text-transform: none;
+  column-count: 3;
+  column-width: calc(100% / 3);
+  column-gap: 24px;
+  column-fill: auto;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  &__item {
+    border-bottom: 1px solid $colorGrey;
+    margin-bottom: 16px;
+    transition: border-color .3s;
+
+    a {
+      @include flex(space-between);
+      padding-bottom: 14.5px;
+
+      &::after {
+        content: '';
+        width: $iconSize;
+        height: $iconSize;
+        background: url(./../img/icons/icon-arrow.svg);
+        background-size: contain;
+        transform: rotate(-45deg);
+      }
+    }
+
+    &:hover {
+      border-color: white;
+    }
     
   }
-  &__content {}
 }
 
 @media (max-width: $bp1) {
@@ -27,6 +99,7 @@
     &__list {
       flex-direction: column;
       align-items: flex-start;
+      gap: 0;
     }
   }
   .menu-item {
